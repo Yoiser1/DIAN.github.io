@@ -1,0 +1,817 @@
+/* CSS Document */
+/*Clases para la presentaci\u0421n de las ventanas MUISCA*/
+/*Formatos para texto*/
+
+.textoFechaHora{
+    display:inline-block;
+	padding-right:10px;
+	vertical-align:middle;
+	font-family: "Segoe UI";
+	color: #333333;
+	font-size:16px;
+	padding-top:3px;
+	
+	
+}
+
+
+
+/*texto para area de trabajo a 10 puntos*/
+.textoVerde{
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #2d5544;
+}
+
+.textPlano{
+  border: black 0px solid;
+  margin:3;
+  padding:2px;
+  background-color: #ffffff;
+  /*border-right: #c6c6c6 2px solid;
+  border-bottom: #c6c6c6 2px solid;*/
+}
+
+.textoBlanco{
+    font-family: "Arial";
+	font-size: 10pt;
+    color: #FFFFFF;
+}
+
+/*texto para area de trabajo a 10 puntos*/
+.textoVerdeLogin{
+	font-family: "Arial";
+	font-size: 9pt;
+	color: #2d5544;
+}
+
+
+.tipoLetraAlarma{
+	font-family: "Arial";
+	color: #2d5544;
+	font-size:10px;
+}
+.tipoLetraAlarmaASeleccionar{
+	font-family: "Arial";
+	color: #2d5544;
+	font-size:10px;
+}
+
+.textoOcre{
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #CE9400;
+}
+.textoGris{
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #666666;
+}
+
+/** ESTILO GENERICO PARA LOS LINK'S **/
+a{
+	color: #2d5544;
+	font-family: "Arial";
+	text-decoration: none;
+	font-size: 12px;
+	text-align: center;
+}
+
+a:hover{color: #CE9400;}
+
+a img{
+  border: 0px;
+}
+a:hover img{
+  border: 0px;
+}
+
+
+a.linkPequeno {	font-size: 11px;}
+a:hover.linkPequeno{font-size: 11px;}
+/*
+tr a{
+    font-size: 11px;
+}
+tr a:hover{
+    font-size: 11px;
+}
+
+*/
+.titulo1 {
+	font-family: "Arial";
+	font-size: 14pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:center;
+}
+.titulo2 {
+	font-family: "Arial";
+	font-size: 12pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:center;
+	font-weight: bold;
+}
+.titulo3 {
+	font-family: "Arial";
+	font-size: 14pt;
+	color: #CE9400;
+	text-decoration: none;
+	text-align:center;
+}
+.titulo4 {
+	font-family: "Arial";
+	font-size: 14pt;
+	color: #CE9400;
+	text-decoration: none;
+	text-align:center;
+	font-weight: bold;
+}
+.titulo5 {
+	font-family: "Arial";
+	font-size: 14pt;
+	color: #999999;
+	text-decoration: none;
+	text-align:center;
+}
+.titulo6 {
+	font-family: "Arial";
+	font-size: 14pt;
+	color: #999999;
+	text-decoration: none;
+	text-align:center;
+	font-weight: bold;
+}
+.titulo7 {
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:center;
+	font-weight: bold;
+}
+
+.titulo8 {
+	font-family: "Arial";
+	font-size: 12pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:center;
+	font-weight: bold;
+}
+
+.tituloTabla{
+    background-color: #C6E1D7;
+    padding:  2px 6px 3px 6px;
+    font-family: "Arial";
+	font-size: 10pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:center;
+	width: 100%;
+  }
+
+.areaTrabajo1 {
+	background-color: #FFF7DE;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:center;
+}
+.areaTrabajo2 {
+	background-color: #EBEBEB;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #000000;
+	text-decoration: none;
+	text-align:center;
+}
+.areaTrabajo3 {
+	background-color: #FFFFFF;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #000000;
+	text-decoration: none;
+	text-align:center;
+}
+.tablaV {
+	border-right: #448267 2px solid;
+	border-top: #448267 2px solid;
+	border-left: #448267 2px solid;
+	border-bottom: #448267 2px solid;
+	background-color: #E6F2ED;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #2d5544;
+	text-decoration: none;
+	align:center;
+}
+.tablaA {
+	border-right: #ce9400 2px solid;
+	border-top: #ce9400 2px solid;
+	border-left: #ce9400 2px solid;
+	border-bottom: #ce9400 2px solid;
+	background-color: #FFF7DE;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #666666;
+	text-decoration: none;
+	align:center;
+}
+.tablaG {
+	border-right: #666666 2px solid;
+	border-top: #666666 2px solid;
+	border-left: #666666 2px solid;
+	border-bottom: #666666 2px solid;
+	background-color: #EBEBEB;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #000000;
+	text-decoration: none;
+	align:center;
+}
+.tablaB {
+	border-right: #666666 2px solid;
+	border-top: #666666 2px solid;
+	border-left: #666666 2px solid;
+	border-bottom: #666666 2px solid;
+	background-color: #ffffff;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #000000;
+	text-decoration: none;
+	align:center;
+}
+.encabTablaV {
+	background-color: #448267;
+	font-family: "Arial";
+	font-size: 11pt;
+	color: #ffffff;
+	text-decoration: none;
+	align:center;
+	font-weight: bold;
+}
+.encabTablaA {
+	background-color: #E7C752;
+	font-family: "Arial";
+	font-size: 11pt;
+	color: #ffffff;
+	text-decoration: none;
+	align:center;
+	font-weight: bold;
+}
+.encabTablaG {
+	background-color: #999999;
+	font-family: "Arial";
+	font-size: 11pt;
+	color: #ffffff;
+	text-decoration: none;
+	align:center;
+	font-weight: bold;
+}
+.encabTablaB {
+	background-color: #CCCCCC;
+	font-family: "Arial";
+	font-size: 11pt;
+	color: #000000;
+	text-decoration: none;
+	align:center;
+	font-weight: bold;
+}
+.filaIzq {
+	border-right: #FFFFFF 1px solid;
+	border-top: #C6E1D7 1px solid;
+	border-left: #FFFFFF 1px solid;
+	border-bottom: #FFFFFF 1px solid;
+	background-color: #E6F2ED;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:left;
+}
+.filaCen {
+	border-right: #FFFFFF 1px solid;
+	border-top: #C6E1D7 1px solid;
+	border-left: #FFFFFF 1px solid;
+	border-bottom: #FFFFFF 1px solid;
+	background-color: #E6F2ED;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:center;
+}
+.filaDer {
+	border-right: #FFFFFF 1px solid;
+	border-top: #C6E1D7 1px solid;
+	border-left: #FFFFFF 1px solid;
+	border-bottom: #FFFFFF 1px solid;
+	background-color: #E6F2ED;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:right;
+}
+.filaIzqBlan {
+	border-right: #FFFFFF 1px solid;
+	border-top: #C6E1D7 1px solid;
+	border-left: #FFFFFF 1px solid;
+	border-bottom: #FFFFFF 1px solid;
+	background-color: #FFFFFF;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:left;
+}
+.filaCenBlan {
+	border-right: #FFFFFF 1px solid;
+	border-top: #C6E1D7 1px solid;
+	border-left: #FFFFFF 1px solid;
+	border-bottom: #FFFFFF 1px solid;
+	background-color: #FFFFFF;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:center;
+}
+.filaDerBlan {
+	border-right: #FFFFFF 1px solid;
+	border-top: #C6E1D7 1px solid;
+	border-left: #FFFFFF 1px solid;
+	border-bottom: #FFFFFF 1px solid;
+	background-color: #FFFFFF;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:right;
+}
+.datoRojo {
+	border-right: #FFFFFF 1px solid;
+	border-top: #C6E1D7 1px solid;
+	border-left: #FFFFFF 1px solid;
+	border-bottom: #FFFFFF 1px solid;
+	background-color: #E6F2ED;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #CC0000;
+	text-decoration: none;
+	text-align:left;
+}
+.filaDatoRojo {
+	border-right: #FFFFFF 1px solid;
+	border-top: #C6E1D7 1px solid;
+	border-left: #FFFFFF 1px solid;
+	border-bottom: #FFFFFF 1px solid;
+	background-color: #FFFFFF;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #CE9400;
+	text-decoration: none;
+	text-align:right;
+}
+.filaDatoVerde {
+	border-right: #FFFFFF 1px solid;
+	border-top: #C6E1D7 1px solid;
+	border-left: #FFFFFF 1px solid;
+	border-bottom: #FFFFFF 1px solid;
+	background-color: #FFFFFF;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #019A49;
+	text-decoration: none;
+	text-align:right;
+}
+.tVertical {
+	BORDER-RIGHT: #448267 1px solid;
+	BORDER-TOP: #448267 1px solid;
+	BORDER-LEFT: #FFFFFF 1px solid;
+	BORDER-BOTTOM: #FFFFFF 1px solid;
+	BACKGROUND-COLOR: #FFFFFF;
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:left;
+}
+.subVer {
+	BORDER-RIGHT: #448267 1px solid;
+	BORDER-TOP: #C6E1D7 1px solid;
+	BORDER-LEFT: #E6F2ED 1px solid;
+	BORDER-BOTTOM: #FFFFFF 1px solid;
+	BACKGROUND-COLOR: #E6F2ED;
+	font-family: "Arial";
+	font-size: 8pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:right;
+	padding-left: 12px;
+}
+.subverB {
+	BORDER-RIGHT: #448267 1px solid;
+	BORDER-TOP: #FFFFFF 1px solid;
+	BORDER-LEFT: #E6F2ED 1px solid;
+	BORDER-BOTTOM: #FFFFFF 1px solid;
+	BACKGROUND-COLOR: #FFFFFF;
+	font-family: "Arial";
+	font-size: 8pt;
+	color: #2d5544;
+	text-decoration: none;
+	text-align:right;
+	padding-left: 12px;
+}
+.left {
+	text-align:left;
+}
+.tbl-Mensaje-left{
+    padding-top: 11px;
+    padding-bottom: 15px;
+    background: #FFECEC;
+    text-align: center;
+    border-style: solid;
+    border-color: #FDE3E2;
+}
+.tbl-Mensaje-right{
+   	width: 127px;
+    padding-top: 11px;
+    padding-bottom: 15px;
+    background: #FFECEC;
+    text-align: center;
+    border-style: solid;
+    border-color: #FDE3E2;
+}
+    
+.left-head {
+	text-align:left;
+	width:200px;
+}
+
+.menuNoSeguro{
+    background-image:  url(../imagenes/es/fondos/bg_menuizq.jpg);
+}
+
+.cabezote {
+	width:790px;
+	height:105px;
+	background-image:   url(../imagenes/es/fondos/topinactiva.jpg);
+}
+.fondo {
+	background-image:  url(../imagenes/es/fondos/fondo18.jpg);
+}
+.center{
+    text-align:center;
+}
+
+.centerPanelGrid{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cambiarContrasena {
+    background: url(../imagenes/es/fondos/cambiarcontrasenia.jpg) no-repeat top;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.cambiarContrasenaEncabezado {
+    background-color: #cfe5d9;
+}
+
+.cambiarContrasenaCuerpo {
+    margin-left: auto;
+    margin-top: 5%;
+}
+
+.cambiarContrasenaFlash {
+  margin-left: 25%
+}
+
+.mensaje_informacion{
+    color: #000000;
+    text-align:left;
+    font-size: 10pt;
+}
+
+.mensaje_error{
+    color: #e00505;
+    text-align:left;
+    font-size: 10pt;
+}
+
+.textoNegro{
+	font-family: "Arial";
+	font-size: 10pt;
+}
+
+.textoNegroPequeno{
+	font-family: "Arial";
+	font-size: 11px;
+}
+
+.right{
+    text-align:right;
+}
+.right-head{
+    text-align:right;
+    width:90px;
+}
+
+.textoContextoSeguridad{
+    font-family: "Arial";
+    font-size: 10px;    
+}
+
+.scrollableDiv {
+    border: 1px;
+    overflow: auto;
+    width: 200px;
+    height: 400px;
+    align: center;
+    valign: top;
+
+
+    scrollbar-face-color: #E6F2ED;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #E6F2ED;
+	scrollbar-3dlight-color: #E6F2ED;
+	scrollbar-darkshadow-color: #E6F2ED;
+	scrollbar-track-color: #E6F2ED;
+	scrollbar-arrow-color: #000000;
+
+}
+
+.scrollableDivBandejaTareas {
+    border: 1px;
+    overflow: auto;
+    width: 200px;
+    height: 250px;
+    align: center;
+    valign: top;
+
+
+    scrollbar-face-color: #E6F2ED;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #E6F2ED;
+	scrollbar-3dlight-color: #E6F2ED;
+	scrollbar-darkshadow-color: #E6F2ED;
+	scrollbar-track-color: #E6F2ED;
+	scrollbar-arrow-color: #000000;
+
+}
+
+/* para pantalla de crear manejadores genericos y funciones*/
+
+.scrollableDivScript {
+    border: 1px;
+    overflow: auto;
+    width: 100%;
+    height: 280px;
+    align: center;
+
+    scrollbar-face-color: #E6F2ED;
+    scrollbar-shadow-color: #000000;
+    scrollbar-highlight-color: #E6F2ED;
+    scrollbar-3dlight-color: #E6F2ED;
+    scrollbar-darkshadow-color: #E6F2ED;
+    scrollbar-track-color: #E6F2ED;
+    scrollbar-arrow-color: #000000;
+}
+
+.alinearArriba{
+  vertical-align: top;
+  align: center;
+  width:50%;
+}
+
+.anchoFull{
+  width:100%;
+}
+.anchoFull table{
+  width:100%;
+}
+.anchoFull select{
+  width:100%;
+}
+.anchoMin{
+  width:1%;
+}
+
+
+/* para pantalla LOGIN CERTIFICADO*/
+
+.lcTablaActivarCuenta{
+   background:#fff url('../imagenes/es/fondos/actcuentasinlogo.jpg') no-repeat right top;
+   width:   75%;
+   vertical-align:top;
+   align: left;
+}
+
+.lcTablaCambiarContrasena{
+   background:#fff url('../imagenes/es/fondos/cambiarcontrasenia.jpg') no-repeat top;
+   width:   75%;
+   vertical-align:top;
+   align: left;
+}
+
+.lcTablaComponentes{
+  border-spacing: 10px 10px;
+  margin-top:  5%;
+  margin-left: 20%;
+}
+
+.lcCeldasLabels{
+  padding:5px 5px 5px 5px;
+  background:#cfe5d9;
+}
+
+.alignLeft{
+    text-align:left;
+}
+
+.textoAlertaTarea1{
+	font-family: "Arial";
+	font-size: 9pt;
+}
+
+.textoAlertaTarea2{
+	font-family: "Arial";
+	font-size: 9pt;
+	color: #CC0000;
+}
+
+.scrollableDivRedim {
+    border: 1px;
+    overflow: auto;
+    width: 100%;
+    height: none;
+    align: center;
+    scrollbar-face-color: #E6F2ED;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #E6F2ED;
+	scrollbar-3dlight-color: #E6F2ED;
+	scrollbar-darkshadow-color: #E6F2ED;
+	scrollbar-track-color: #E6F2ED;
+	scrollbar-arrow-color: #000000;
+}
+
+.slider{
+  font-family: arial;
+  font-size: 11px;
+  background-color: #c6e1d7;
+  padding: 3px;
+  margin:0px;
+  border:#efefef solid 3px;
+  width:100%;
+  height: 1em;
+  line-height: 2em;
+}
+
+.tipoFilaNormalGris{
+    background-color: #FFFFCC;
+    border-left: 1px solid #FF9900;
+    border-right: 1px solid #FF9900;
+    border-bottom: 1px solid #FF9900;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    margin: 0 0 0 0px;
+    width: 100%;
+}
+
+.barraMenu{
+  width:10px;
+  background: #91A7B4;
+  white-space:nowrap;
+}
+
+.barraMenuHover{
+  width:10px;
+  background: #D9D9D9;
+  white-space:nowrap;
+}
+
+
+.tituloGris{
+	font-family: "Segoe UI";
+	font-size  : 14pt;
+	color: #999999;
+	
+}
+
+.tituloNegroMenor{
+	font-family: "Segoe UI";
+	font-size  : 9pt;
+	color: #333333;
+	
+}
+
+.tituloOcre{
+	font-family: "Segoe UI";
+	font-size  : 30pt;
+	color: #A57C29;
+	padding:0;
+	border-spacing: 0px 0px;
+}
+
+.alineacion{
+	padding-left:20px;
+	vertical-align:text-top;
+}
+
+.tituloOcreMenor{
+	font-family: "Segoe UI";
+	font-size  : 9pt;
+	color: #A57C29;
+}
+.texNegro{
+	font-family: "Segoe UI";
+	font-size  : 10pt;
+	color: #333333;
+}
+.texBlanco{
+	font-family: "Segoe UI";
+	font-size  : 10pt;
+	color: #ffffff;
+}
+.texAmarillo{
+	font-family: "Segoe UI";
+	font-size  : 9pt;
+	color: #A57C29;
+}
+.texRojo{
+	font-family: "Segoe UI";
+	font-size  : 9pt;
+	color: #AE1917;
+}
+.texGris{
+	font-family: "Segoe UI";
+	font-size  : 10pt;
+	color: #A9A9A9;
+}
+.texAzul{
+	font-family: "Segoe UI";
+	font-size  : 9pt;
+	color: #39A0B3;
+}
+.texVerdeClaro{
+	font-family: "Segoe UI";
+	font-size  : 9pt;
+	color: #1E914B;
+}
+.texAzulOscuro{
+	font-family: "Segoe UI";
+	font-size  : 22pt;
+	color: #016766;
+}
+
+.input-prompt {
+  position: absolute;
+  font-style: italic;
+  color: #aaa;
+  margin: 0.2em 0 0 0.5em;
+}
+
+input.placeholder{
+  color: red;
+}
+
+.alineacionTop{
+	vertical-align:text-top;
+	border-spacing: 0;
+	padding-buttom: 0;
+}
+.alineacionTop>td{
+	vertical-align:text-top;
+	border-spacing: 0;
+	padding-buttom: 0;
+}
+
+.alineacionCuerpo{
+	vertical-align:text-top;
+	vertical-align:top;
+	
+}
+
+
+.tituloGris2{
+	font-family: "Segoe UI";
+	font-size  : 27pt;
+	color: #444444;
+}
+
+.alineacionTop{
+	vertical-align:text-top;
+	border-spacing: 0;
+	padding-buttom: 0;
+}
+
+    
+    
+

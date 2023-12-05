@@ -1,0 +1,330 @@
+/*Defines styles for a modalpanel header*/
+.rich-mpnl-header {
+	font-family: arial;
+	font-size: 10px;
+	color: #2D5544;
+	background: #E6F2ED url("../imagenes/es/fondos/tabverde.jpg") repeat-x
+		left bottom;
+}
+
+/*Defines styles for all tabPanel*/
+.rich-tabpanel {
+
+}
+
+/*Defines styles for an internal content*/
+.rich-tabpanel-content {
+	border-bottom: 2px solid #E6F2ED;
+	border-left: 2px solid #E6F2ED;
+	border-right: 2px solid #E6F2ED;
+}
+
+/*Defines styles for a wrapper element of a tabPanel content. It should define a shift equal to borders width in order to overlap panel tabs*/
+.rich-tabpanel-content-position {
+
+}
+
+/*Defines styles for side elements of a tabPanel header*/
+.rich-tabhdr-side-border {
+
+}
+
+/*Defines styles for a header internal element*/
+.rich-tabhdr-side-cell {
+
+}
+
+/*Defines styles for an internal element of an active header*/
+.rich-tabhdr-cell-active {
+
+}
+
+/*Defines styles for an internal element of an inactive label*/
+.rich-tabhdr-cell-inactive {
+
+}
+
+.rich-tabhdr-cell-disabled {
+
+}
+
+/*------------------------------------------- TABs------------------------------------*/
+	/*Defines styles for a tab header*/
+.rich-tab-header {
+	font-family: arial;
+	font-size: 10px;
+	color: #2D5544;
+	/*background: #E6F2ED url("../imagenes/es/fondos/tabverde.jpg") repeat-x left top;*/
+}
+
+/*Defines styles for a tab label*/
+.rich-tab-label {
+
+}
+
+/*Defines styles for an active tab*/
+.rich-tab-active {
+	font-weight: bold;
+	background: #E6F2ED url("../imagenes/es/fondos/tabVerdePanel.JPG") repeat-x
+		left top;
+}
+
+/*Defines styles for an inactive tab*/
+.rich-tab-inactive {
+	background: #E6F2ED url("../imagenes/es/fondos/tabGrisPanel.JPG") repeat-x
+		left top;
+}
+
+/*Defines styles for a disabled tab*/
+.rich-tab-disabled {
+
+}
+
+/*--------------------------------------- TogglePanel ------------------------------------*/
+	/*Defines styles for header element of a component*/
+.rich-stglpanel-header {
+	font-family: arial;
+	font-size: 10px;
+	color: #2D5544;
+	background: #E6F2ED url("../imagenes/es/fondos/tabverde.jpg") repeat-x
+		left top;
+}
+
+/*--------------------------------------- TOOLTIP ------------------------------------*/
+/*Defines styles for a wrapper <span> or <div> element of a toolTip*/
+.rich-tool-tip {
+	background: #E6F2ED;
+	border-color: #2D5544;
+}
+
+/*--------------------------------------- datascroller------------------------------------*/
+
+.rich-datascr-button{
+    color: #2D5544;
+    background: #ffffff;
+    border-color: #ffffff;
+    border-left-color: #CCCCCC;
+    border-right-color: #CCCCCC;
+  }
+
+.rich-dtascroller-table{
+    border-color: #CCCCCC;
+   padding: 0px 0px 0px 0px;
+}
+
+.rich-datascr-act{
+ color: #2D5544;
+ border: hidden;
+}
+
+.rich-datascr-inact{
+ color: #CCCCCC;
+ border: hidden;
+}
+/*--------------------------------------- panel ------------------------------------*/
+.rich-panel-header{
+	font-family: arial;
+	font-size: 11pt;
+	color: #2D5544;
+	background: #E6F2ED url("../imagenes/es/fondos/tabverde.jpg") repeat-x left bottom;
+	text-decoration: none;
+	font-weight: normal;
+	text-align:left;
+	
+}
+
+	 
+.rich-tool-tip{
+    background-color: #FAE6B0;
+    border: 1px solid #E5973E;
+    display: none;
+    width: 300px;
+    float: left;
+    text-align:justify;
+    
+    font-family: Arial,Verdana,sans-serif;
+    font-size: 11px;
+    padding: 7px;
+    position: absolute;
+}
+	
+/*--------------------------------------- CALENDAR -----------------------------------*/
+	/* Defines styles for names of working days in a header */
+.rich-calendar-days {
+	font-weight: bold;
+	color: #CE9400;
+	text-transform: capitalize;
+	background-color: #FFFFFF;
+}
+
+/* Defines styles for names of weekend in a header */
+.rich-calendar-weekends {
+	font-weight: bold;
+	color: #CE9400;
+	text-transform: capitalize;
+	background-color: #FFFFFF;
+}
+
+/* Defines styles for weeks numbers */
+.rich-calendar-week {
+
+}
+
+
+/* Defines styles for cells with days */
+.rich-calendar-cell {
+	border-bottom: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	border-top: 1px solid #ffffff;
+}
+
+/* Defines styles for holiday */
+.rich-calendar-holly {
+	color: #CE9400;
+	text-transform: capitalize;
+	background-color: #FFFFFF;
+}
+
+/*Defines styles for a selected day*/
+.rich-calendar-select {
+	font-weight: bold;
+	color: #000000;
+  background-color : #FFFFFF;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+}
+
+/* Defines styles for a hovered day */
+.rich-calendar-hover {
+	background-color: #F0F0F0;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+}
+
+/* Defines styles for a popup element */
+.rich-calendar-popup {
+
+}
+
+/* Defines styles for a popup element exterior */
+.rich-calendar-exterior {
+
+}
+
+/* Defines styles for toolbars */
+.rich-calendar-tool {
+	font-weight: bold;
+	color: #BB9549;
+}
+
+/* Defines styles for names of months */
+.rich-calendar-month {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-transform: capitalize;
+  width: 200px;
+}
+
+/* Defines styles for an optional header */
+.rich-calendar-header-optional {
+
+}
+
+/* Defines styles for an optional footer */
+.rich-calendar-footer-optional {
+	background-color: #F0F0F0;
+  text-align: center;
+  font-weight: none;
+}
+
+/* Defines styles for a header */
+.rich-calendar-header {
+	background-color: #2D5544;
+}
+
+/* Defines styles for a footer */
+.rich-calendar-footer {
+	background-color: #F0F0F0;
+}
+
+/* Defines styles for an active boundary button */
+.rich-calendar-boundary-dates {
+	background-color: #FFFFFF;
+	color: #FFFFFF;
+}
+
+/* Defines styles for an inactive boundary date */
+.rich-calendar-btn {
+
+}
+
+/* Defines styles for a today control date */
+.rich-calendar-toolfooter {
+	background-color: #F0F0F0;
+}
+
+/* Defines styles for cell with a current date */
+.rich-calendar-today {
+	font-weight: bold;
+	color: #FF0000;
+	background-color: #FFFFFF;
+}
+
+/* Defines styles for a popup element during time  selection */
+.rich-calendar-time-layout {
+	border: 1px solid #2D5544;
+}
+
+.rich-calendar-time-layout-fields {
+	background-color: #F0F0F0;
+}
+
+/*Defines styles for a "up" button*/
+.rich-calendar-spinner-up {
+	background-color: #2D5544;
+}
+
+/*Defines styles for a "down" button*/
+.rich-calendar-spinner-down {
+	background-color: #2D5544;
+}
+
+/*.rich-calendar-time-layout-ok {
+	border-top: 1px solid #F0F0F0;
+	border-left: 1px solid #F0F0F0;
+	background-color: #000000;
+}
+
+.rich-calendar-time-layout-cancel {
+	border-top: 1px solid #F0F0F0;
+	border-left: 1px solid #F0F0F0;
+	background-color: #F0F0F0;
+}*/
+
+.rich-calendar-time-btn {
+    width: 45px;
+    /*border: 1px solid;*/
+    /*background-color: #E6F2ED;*/
+    background-color: #C6E1D7;
+    /*border-color: tableBackgroundColor;
+    border-right-color: panelBorderColor;
+    border-bottom-color: panelBorderColor;
+    text-align: center;
+    padding: 2px;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;*/
+}
+
+.rich-calendar-tool-btn{
+ color: #2D5544;
+}
+
+.separator{
+    background-color:#cccccc;
+}

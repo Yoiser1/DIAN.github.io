@@ -1,0 +1,500 @@
+/*/------------------------------------------------------------------\*/
+/*|                                                                  |*/
+/*| Para el manejo de estilos en las filas de tablas de seleccin de |*/
+/*| BO's.                                                            |*/
+/*|                                                                  |*/
+/*\------------------------------------------------------------------/*/
+
+/** PRIMERA VERSIÓN DE ESTILOS DE TABLA SELECCIÓN */
+
+.tipoFilaNormal{
+    font-family  : arial;
+    font-size  : 12px;
+    background-color : #ffefce;
+    color  : #2D5544
+ }
+ 
+ tr.tipoFilaSeleccionada td{
+    font-family  : arial;
+    font-size  : 11px;
+    background-color : #EFEFEF;
+    color  : #000000;
+    padding:  4px 10px 4px 10px;
+    border-bottom:1px solid #CCCCCC;
+    empty-cells: show;
+ }
+ 
+ .tipoFilaEncabezado{
+    font-family  : arial;
+    font-size  : 12px;
+    font-color  : #FFFFFF;
+    background-color : #FFEBAD;
+ }
+ 
+ .verticalTitles{
+    width   : 30%;
+    font-family  : verdana;
+    font-size  : 12px;
+    background-color: #FFEBAD;
+ }
+ 
+ 
+ /** SEGUNDA VERSIÓN DE ESTILOS DE TABLA SELECCIÓN */
+ 
+ .fondoTituloTop {
+   text-align:center;
+   vertical-align:top;
+   font-family  : arial;
+   font-size: 11px;
+   color  : #2D5544;
+   background-color:#C6E1D7;
+   font-weight: normal;
+   padding:  4px 10px 4px 10px;
+   padding-left:10px;
+   padding-right:10px;
+ }
+ 
+ .fondoTituloLeftAjustado {
+    width: 30%;
+    font-family  : arial;
+    font-size  : 11px;
+    color  : #2D5544;
+    background-color:#E6f2ed;
+    vertical-align:middle;
+    padding:4px 10px 4px 10px;
+    border-left:4px solid #2d5544;
+ }
+ 
+ .fondoTituloLeft {
+    font-family  : arial;
+    font-size  : 12px;
+    background: #E6F2ED url("../imagenes/es/fondos/1x1_white.gif") repeat-y left top;
+    vertical-align:middle;
+    margin:0;
+    padding:2px 9px 2px 9px;
+    border-left:4px solid #2D5544;
+    /*border-bottom:1px solid #C6E1D7;*/
+    color  : #000000;
+    empty-cells: show;
+ }
+ 
+ .tipoFilaNormalVerde{
+   vertical-align:top;
+   font-size: 11px;
+   background-color:#f3f3f3;
+   border: 1px solid #ffffff;
+ }
+ 
+ .tipoFilaNormalAlerta{
+    font-family  : arial;
+    font-size  : 12px;
+    background-color : #E6F2ED;
+    color  : #000000;
+    padding:  4px 10px 4px 10px;
+    border-bottom:1px solid #2D5544;
+    empty-cells: show;
+ }
+ 
+ .tipoFilaNormalNeutral{
+    font-family  : arial;
+    font-size  : 12px;
+    background-color : #C6E1D7;
+    color  : #000000;
+    padding:  4px 10px 4px 10px;
+    border-bottom:1px solid #2D5544;
+    empty-cells: show;
+ }
+ 
+ tr.tipoFilaNormalVerde td{
+    font-family  : arial;
+    font-size  : 11px;
+    background-color : #f3f3f3;
+    color  : #000000;
+    padding:  4px 10px 4px 10px;
+    empty-cells: show;
+ }
+ 
+ tr.tipoFilaNormalVerde a{
+     font-size: 11px;
+ }
+ tr.tipoFilaNormalVerde a:hover{
+     font-size: 11px;
+ }
+ 
+ tr.tipoFilaNormalAlerta td{
+    font-family  : arial;
+    font-size  : 11px;
+    background-color : #E6F2ED;
+    color  : #000000;
+    padding:  4px 10px 4px 10px;
+    border-bottom:1px solid #2D5544;
+    empty-cells: show;
+ }
+ 
+ tr.tipoFilaNormalAlerta a{
+    font-size: 11px;
+    color  : #CE9400;
+ }
+ tr.tipoFilaNormalAlerta a:hover{
+     font-size: 11px;
+ }
+ 
+ tr.tipoFilaNormalNeutral td{
+    font-family  : arial;
+    font-size  : 11px;
+    background-color : #C6E1D7;
+    color  : #000000;
+    padding:  4px 10px 4px 10px;
+    border-bottom:1px solid #2D5544;
+    empty-cells: show;
+ }
+ 
+ tr.tipoFilaNormalNeutral a{
+    font-size: 11px;
+    color  : #CE9400;
+ }
+ tr.tipoFilaNormalNeutral a:hover{
+     font-size: 11px;
+ }
+ 
+ .tipoFilaNormalBlanco{
+    font-family  : arial;
+    font-size  : 12px;
+    background-color : #FFFFFF;
+    color  : #000000;
+    padding:  4px 10px 4px 10px;
+    border-bottom:1px solid #2D5544;
+    empty-cells: show;
+ }
+ 
+ tr.tipoFilaNormalBlanco td{
+    font-family  : arial;
+    font-size  : 12px;
+    background-color : #FFFFFF;
+    color  : #000000;
+    padding:  4px 10px 4px 10px;
+    border-bottom:1px solid #2D5544;
+    empty-cells: show;
+ }
+ 
+ 
+ tr.tipoFilaSeleccionadaAmarillo td{
+    font-family  : arial;
+    font-size  : 12px;
+    background-color : #ffefce;
+    color: #ce9400;
+    padding:  4px 10px 4px 10px;
+    border-bottom:1px solid #ce9400;
+    empty-cells: show;
+ }
+ 
+ table.espaciado{
+    width: 100%;
+    margin-left:auto; margin-right:auto;
+    border-spacing: 2px 3px;
+ }
+ 
+ 
+ /** PRIMERA VERSIÓN DE ESTILOS PARA PÁGINA MENÚ PRINCIPAL */
+ 
+ .tipoTituloMenuPagina{
+     font-family	: arial;
+     background	: url("../imagenes/es/fondos/fondoTituloMenuPagina.gif") no-repeat left top;
+     font-size	: 12px;
+     color		: #CE9400;
+     font-weight : bold;
+     padding		:  4px 10px 4px 10px;
+     border-left	: 4px solid #2D5544;    
+     text-align	: center;
+     height		: 40px
+ }
+ 
+ .tipoTituloMenuPaginaFirma{
+     font-family	: arial;
+     background	: url("../imagenes/es/fondos/fondoTituloMenuPagina.gif") no-repeat left top;
+     font-size	: 12px;
+     color		: #CE9400;
+     font-weight : bold;
+     padding		: 4px 10px 4px 10px;
+     border-left	: 4px solid #2D5544;
+     border-top	: 0px solid #2D5544;
+     text-align	: center;
+     height		: 40px
+ }
+ 
+ .tipoFilaNormalMenuPaginaVerde{
+     font-family			: arial;
+     font-size			: 12px;
+     background-color 	: #E6F2ED;
+     padding				: 4px 10px 4px 10px;
+     border-left			: 4px solid #2D5544;
+    /* border-bottom:1px solid #2D5544*/
+ }
+ 
+ .tipoFilaNormalMenuPaginaVerdeClaro{
+     font-family		: arial;
+     font-size		: 12px;
+     background-color : #EFEFEF;
+     padding:  4px 10px 4px 10px;
+     /*border-bottom:1px solid #2D5544;*/
+ }
+ 
+ 
+ /*******/
+ 
+ .tipoColumnaMedia{
+     font-family		: arial;
+     font-size		: 12px;
+     vertical-align:top;
+     width: 50%;
+ }
+ 
+ .tipoDosColumnas{
+     font-family  : arial;
+     font-size  : 12px;
+     background-color : #E6F2ED;
+     color  : #000000;
+     padding:  4px 10px 4px 10px;
+     border-bottom:1px solid #2D5544;
+     empty-cells: show;
+     vertical-align:top;
+     width: 45%;
+ }
+ 
+ .tipoColumnaAngosta{
+     font-family  : arial;
+     font-size  : 12px;
+     background-color : #E6F2ED;
+     color  : #000000;
+     padding:  4px 10px 4px 10px;
+     border-bottom:1px solid #2D5544;
+     empty-cells: show;
+     vertical-align:middle;
+     width: 10%;
+ }
+ .tablaLstCampanasHeader{
+     background-color: #FFFFFF;
+      border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 14px;
+      border: none;
+      color  : black;
+ }
+ 
+ .tablaLstCampanasHeaderIzq{
+     background-color: #FFFFFF;
+      border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 14px;
+      border: none;
+      color  : black;
+ }
+ 
+ .tablaLstCampanasHeaderDer{
+     background-color: #FFFFFF;
+      border-collapse:collapse;
+      text-align: right;
+      font-family: "Segoe UI";
+      font-size: 14px;
+      border: none;
+      color  : black;
+ }
+ 
+ .tablaLstCampanasColumnDer{
+     border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 14px;
+      border: none;
+       color  : #555555;
+      text-align: right;
+     }
+ 
+ .tablaLstCampanasColumnIzq{
+      border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 14px;
+      border: none;
+      color  : #0099FF;
+      text-align: left;
+ }
+ 
+ .tablaLstCampanasColumnIzq1{
+      border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 16px;
+      border: none;
+      color  : #333333;
+      text-align: left;
+      width : 70%
+ }
+ .tablaLstCampanasColumnIzq2{
+      border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 16px;
+      border: none;
+      color  : #333333;
+      text-align: left;
+      width : 10%
+ }
+ .tablaLstCampanasColumnIzq3{
+      border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 16px;
+      border: none;
+      color  : #333333;
+      text-align: left;
+      width : 30%
+ }
+ 
+ .tablaLstColumnIzq5{
+      border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 16px;
+      border: none;
+      color  : #333333;
+      text-align: left;
+      width : 5%
+ }
+ .tablaLstColumnIzq10{
+      border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 16px;
+      border: none;
+      color  : #333333;
+      text-align: left;
+      width : 10%
+ }
+ .tablaLstColumnIzq20{
+      border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 16px;
+      border: none;
+      color  : #333333;
+      text-align: left;
+      width : 20%
+ }
+ .tablaLstColumnIzq50{
+      border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 16px;
+      border: none;
+      color  : #333333;
+      text-align: left;
+      width : 50%
+ }
+ .tablaLstColumnIzq{
+      border-collapse:collapse;
+      text-align: right;
+      font-family: "Segoe UI";
+      font-size: 11px;
+      border: none;
+      color  : #333333;
+      text-align: right;
+ }
+ .tablaLstBandejaHeader{
+      background-color: #FFFFFF;
+      border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 18px;
+      border: none;
+      color  : black;
+      text-shadow: 1px 1px #A4A4A4;
+ }
+ .tablaLstBandejaHeader13{
+      background-color: #FFFFFF;
+      border-collapse:collapse;
+      text-align: right;
+      font-family: "Segoe UI";
+      font-size: 12px;
+      border: none;
+      color  : black;
+      text-shadow: 1px 1px #A4A4A4;
+ }
+ .tablaLstBandeHeaderIzq1{
+      border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 16px;
+      border: none;
+      color  : #333333;
+      text-align: left;
+      width : 70%
+ }
+ .tablaLstBandeHeaderDer2{ 
+     border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 16px;
+      border: none;
+      color  : #333333;
+      text-align: right;
+      width : 10%
+ }
+ .tablaLstBandeHeaderDer3{
+      border-collapse:collapse;
+      text-align: left;
+      font-family: "Segoe UI";
+      font-size: 16px;
+      border: none;
+      color  : #333333;
+      text-align: right;
+      width : 30%
+ }
+ 
+ .tablaLstHeadertxt16px {
+     border-collapse: collapse;
+     text-align: left;
+     font-family: "Segoe UI";
+     font-size: 16px;
+     border: none;
+     color: black;
+     text-shadow: 1px 1px #A4A4A4;	
+ }
+ .tablaLstHeadertxt16pxTxtBlanco {
+     border-collapse: collapse;
+     text-align: left;
+     font-family: "Segoe UI";
+     font-size: 16px;
+     border: none;
+     color: white;
+     text-shadow: 1px 1px #A4A4A4;	
+ }
+ 
+ .tablaLstHeadertxt18px {
+     border-collapse: collapse;
+     text-align: left;
+     font-family: "Segoe UI";
+     font-size: 18px;
+     border: none;
+     color: black;
+     text-shadow: 1px 1px #A4A4A4;	
+ }
+ .tablaLstHeadertxt18pxTxtBlanco {
+     border-collapse: collapse;
+     text-align: left;
+     font-family: "Segoe UI";
+     font-size: 18px;
+     border: none;
+     color: white;
+     text-shadow: 1px 1px #A4A4A4;	
+ }
+ .tablaTransparente{
+   vertical-align:top;
+   text-align:left;
+   font-size: 11px;
+   background-color:#ffffff;
+   border: 1px solid #ffffff;
+ }
+ 

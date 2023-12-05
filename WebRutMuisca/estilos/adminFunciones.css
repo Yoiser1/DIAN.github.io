@@ -1,0 +1,695 @@
+/* ------------------------------ NUEVOS TABULADORES ------------------------------------- */
+
+body {
+	background-color: #FFFFFF;
+}
+table{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+table.componente{
+        background-color:#ffffff;
+	border:none;
+	border-collapse:collapse;
+	border-spacing: 0px;
+	vertical-align:top;
+	text-align:left;
+}
+
+table.componente table{
+
+	border:none;
+/*	border-collapse:collapse;
+	background-color:#ffffff;*/
+	border-spacing: 0px;
+
+}
+
+td.componenteFondoVerde table{
+	border:none;
+	border-collapse:collapse;
+	border-spacing: 0px;
+	background-color:f3f3f3
+}
+
+table.componente table.espaciosComponente{
+	border-collapse:separate;
+	border-spacing: 0px;
+	border:10px solid #f3f3f3;
+	padding   :0px;
+	background-color:#f3f3f3;
+}
+
+table.componente td{
+/*      background-color:#f3f3f3;*/
+      padding:0px;
+      vertical-align:top;
+}
+
+/*
+table.componente table.espaciosComponente td{
+      padding:0px;
+      vertical-align:top;
+      border-bottom :1px solid #2D5544;
+}*/
+
+
+table.componente table.espaciado{
+   width: 100%;
+   margin-left:auto; margin-right:auto;
+   border-collapse:separate;
+   border-spacing: 2px;
+}
+
+table.componente table td{
+   padding   :0px;
+   vertical-align:top;
+}
+
+
+table.componente th.fondoTituloTop {
+   font-family  : arial;
+   font-size  : 12px;
+   background: #C6E1D7 url("../imagenes/es/fondos/1x1_white.gif") repeat-x left top;
+   vertical-align:middle;
+   margin:0;
+   padding   :2px 9px 2px 9px;
+   border-top:4px solid #2D5544;
+   border-bottom :1px solid #2D5544;
+   color  : #000000;
+   empty-cells: show;
+}
+
+table.componente tr.tipoFilaNormalVerde td{
+   font-family  : arial;
+   font-size  : 11px;
+   background-color : #f3f3f3;
+   color  : #000000;
+   padding:  4px 10px 4px 10px;
+   border-bottom:1px solid #2D5544;
+   empty-cells: show;
+}
+
+
+
+
+/*----------- TABULADOR NORMAL -----------*/
+td.pestana {
+  float:left;
+  background: #ffffff url("/WebRecaudacion/imagenes/es/adminFunciones/izq.gif") no-repeat left top;
+  vertical-align:top;
+  margin:0;
+  padding:0 0 0 9px;
+
+}
+/* Commented Backslash Hack
+   hides rule from IE5-Mac \*/
+td.pestana {float:none;}
+/* End IE5-Mac hack */
+
+td.pestana a{
+  float:left;
+  display:block;
+  background:url("/WebRecaudacion/imagenes/es/adminFunciones/der.gif") no-repeat right top;
+  padding:5px 15px 4px 6px;
+  text-decoration:none;
+  color: #2d5544;
+  white-space:nowrap;
+}
+/* Commented Backslash Hack
+   hides rule from IE5-Mac \*/
+td.pestana a {float:none;}
+/* End IE5-Mac hack */
+td.pestana a:hover{
+  color: #efefef;
+}
+/*----------- TABULADOR SELECCIONADO -----------*/
+td.pestanaSel {
+  float:left;
+  background: #ffffff url("/WebRecaudacion/imagenes/es/adminFunciones/izqSel.gif") no-repeat left top;
+  vertical-align:top;
+  margin:0;
+  padding:0 0 0 9px;
+ }
+/* Commented Backslash Hack
+   hides rule from IE5-Mac \*/
+td.pestanaSel {float:none;}
+/* End IE5-Mac hack */
+td.pestanaSel a{
+  float:left;
+  display:block;
+  background:url("/WebRecaudacion/imagenes/es/adminFunciones/derSel.gif") no-repeat right top;
+  padding:5px 15px 4px 6px;
+  text-decoration:none;
+  font-weight:bold;
+  color: #2d5544;
+  white-space:nowrap;
+}
+/* Commented Backslash Hack
+   hides rule from IE5-Mac \*/
+td.pestanaSel a {float:none;}
+/* End IE5-Mac hack */
+
+/*----------- TABULADOR NORMAL  FONDO VERDE-----------*/
+td.pestanaVerde {
+  float:left;
+  background: #b2cebf url("/WebRecaudacion/imagenes/es/adminFunciones/izqFondoVerde.GIF") no-repeat left top;
+  vertical-align:top;
+  margin:0;
+  padding:0 0 0 9px;
+  border-bottom:1px solid #91AA99;
+}
+/* Commented Backslash Hack
+   hides rule from IE5-Mac \*/
+td.pestanaVerde {float:none;}
+/* End IE5-Mac hack */
+td.pestanaVerde a{
+  float:left;
+  display:block;
+  background:url("/WebRecaudacion/imagenes/es/adminFunciones/derFondoVerde.GIF") no-repeat right top;
+  padding:5px 15px 4px 6px;
+  text-decoration:none;
+  font-weight:bold;
+  color: #698978;
+  white-space:nowrap;
+}
+/* Commented Backslash Hack
+   hides rule from IE5-Mac \*/
+td.pestanaVerde a {float:none;}
+/* End IE5-Mac hack */
+
+td.pestana a:hover{
+  color: #56613F;
+}
+
+/*----------- TABULADOR NORMAL  FONDO VERDE-----------*/
+td.pestanaVerde {
+  float:left;
+  background: #b2cebf url("/WebRecaudacion/imagenes/es/adminFunciones/izqFondoVerde.GIF") no-repeat left top;
+  vertical-align:top;
+  margin:0;
+  padding:0 0 0 9px;
+  border-bottom:1px solid #91AA99;
+}
+/* Commented Backslash Hack
+   hides rule from IE5-Mac \*/
+td.pestanaVerde {float:none;}
+/* End IE5-Mac hack */
+td.pestanaVerde a{
+  float:left;
+  display:block;
+  background:url("/WebRecaudacion/imagenes/es/adminFunciones/derFondoVerde.GIF") no-repeat right top;
+  padding:5px 15px 4px 6px;
+  text-decoration:none;
+  font-weight:bold;
+  color: #698978;
+  white-space:nowrap;
+}
+/* Commented Backslash Hack
+   hides rule from IE5-Mac \*/
+td.pestanaVerde a {float:none;}
+/* End IE5-Mac hack */
+td.pestana a:hover{
+  color: #56613F;
+}
+/*----------- TABULADOR SELECCIONADO FONDO VERDE -----------*/
+td.pestanaSelVerde {
+  float:left;
+  background: #deece0 url("/WebRecaudacion/imagenes/es/adminFunciones/izqSelFondoVerde.GIF") no-repeat left top;
+  vertical-align:top;
+  margin:0;
+  padding:0 0 0 9px;
+  border-bottom:1px solid #deece0;
+}
+/* Commented Backslash Hack
+   hides rule from IE5-Mac \*/
+td.pestanaSelVerde {float:none;}
+/* End IE5-Mac hack */
+td.pestanaSelVerde a{
+  float:left;
+  display:block;
+  background:url("/WebRecaudacion/imagenes/es/adminFunciones/derSelFondoVerde.GIF") no-repeat right top;
+  padding:5px 15px 4px 6px;
+  text-decoration:none;
+  font-weight:bold;
+  color: #56613F;
+  white-space:nowrap;
+}
+/* Commented Backslash Hack
+   hides rule from IE5-Mac \*/
+td.pestanaSelVerde a {float:none;}
+/* End IE5-Mac hack */
+
+/*----------- BORDE DE LA CAJA -----------*/
+
+td.bordeIzq{
+  padding-top:10px;
+  border-left:1px solid #91AA99;
+  padding-left:10px;
+}
+td.bordeDer{
+  padding-top:10px;
+  border-right:1px solid #91AA99;
+  padding-right:10px;
+}
+td.bordeAbajo{
+  padding-top:10px;
+  border-bottom:1px solid #91AA99;
+  padding-bottom:10px;
+}
+td.colorFondoClaro{
+  background-color:#E6F2ED;
+}
+
+td.anchoBotones{
+   width:100px;
+}
+
+td.bordeAbajoNoBoton{
+  margin:0;
+  padding:0 0 0 9px;
+  border-bottom:1px solid #91AA99;
+  empty-cells: show;
+}
+
+/*----------- cosas específicas -----------*/
+td.seccionBotones{
+  text-align: center;
+  background-color:#C6E1D7;
+  padding:5px 5px 5px 5px;
+}
+td.anchoCuarentaPorciento{
+  width:40%;
+  vertical-align:top;
+}
+td.alignTop{
+  width:auto;
+  vertical-align:top;
+}
+
+/*----------- items de las tablas -----------*/
+td.opcionTitulo{
+  background-color:#C6E1D7;
+  padding:5px 5px 5px 5px;
+  white-space:nowrap;
+  width:90px;
+  border-bottom:1px solid #E6F2ED;
+}
+/*--por cosas de la vida IE no soporta aún empty-cells.. toca andar colocando &nbsp; --*/
+td.opcionCampo{
+  background-color:#E6F2ED;
+  padding:5px 5px 5px 5px;
+  border-bottom:1px solid #C6E1D7;
+  empty-cells: show;
+}
+/*----------- text area readonly -----------*/
+.readOnly{
+  background-color:#E6F2ED;
+  border: 1px solid #C6E1D7;
+}
+.read{
+  background-color:#FFFFFF;
+  border: 1px solid #91AA99;
+}
+
+
+
+/*---------- consulta obligacion ------------*/
+
+
+.relBody{
+  vertical-align:top;
+  text-align:center;
+  font-size: 11px;
+  background-color:#f3f3f3;
+  border: 1px solid #ffffff;
+}
+
+td.relBody>table{
+  border-spacing: 4px;
+  font-size: 11px;
+  background-color:#f3f3f3;
+  border: none;
+}
+
+.relBody table td{
+  text-align:center;
+  font-size: 11px;
+  background-color:#f4f4f4;
+  border: 1px solid #ffffff;
+}
+
+.relBody table th{
+  padding-left:10px;
+  padding-right:10px;
+  text-align:center;
+  font-size: 11px;
+  background-color:#f3f3f3;
+  border: 1px solid #ffffff;
+  font-weight: normal;
+}
+
+.relHead{
+  padding-left:10px;
+  padding-right:10px;
+  text-align:center;
+  vertical-align:top;
+  font-size: 11px;
+  background-color:#C6E1D7;
+  border: 1px solid #ffffff;
+  font-weight: normal;
+}
+
+.relHeadGreen{
+  padding-left:10px;
+  padding-right:10px;
+  text-align:center;
+  vertical-align:top;
+  font-size: 11px;
+  color : #2d5544;
+  background-color:#f3f3f3;
+  border: 1px solid #ffffff;
+  font-weight: normal;
+}
+
+.relHeadGreenLeft{
+  padding-left:10px;
+  padding-right:10px;
+  text-left;
+  vertical-align:top;
+  font-size: 11px;
+  color : #2d5544;
+  background-color:#f3f3f3;
+  border: 1px solid #ffffff;
+  font-weight: normal;
+}
+td.fondoAjustadoComponente>table{
+   background-color:#ffffff;
+   border-spacing: 2px;
+}
+
+
+td.fondoAjustadoComponente a:hover table{
+   color:#CE9400;
+}
+
+/*-------- Ajustado---------------------- */
+
+.relBodyAjustado{
+  vertical-align:top;
+  text-align:center;
+
+  font-size: 11px;
+  background-color:#CCCCCC;
+  border: 1px solid #C6E1D7;
+  width:400px;
+ }
+
+td.relBodyAjustado>table{
+  border-spacing: 2px;
+  font-size: 11px;
+  background-color:#CCCCCC;
+  border: none;
+}
+
+.relBodyAjustado table td{
+  text-align:center;
+  font-size: 11px;
+  background-color:#CCCCCC;
+  border: 1px solid #C6E1D7;
+}
+
+.relBodyAjustado table th{
+  padding-left:5px;
+  padding-right:5px;
+  text-align:center;
+  font-size: 11px;
+  background-color:#CCCCCC;
+  border: 1px solid #91AA99;
+  font-weight: normal;
+}
+
+.relHeadAjustado{
+  padding-left:5px;
+  padding-right:5px;
+  text-align:center;
+  vertical-align:top;
+  font-size: 11px;
+  background-color:#C6E1D7;
+  border: 2px solid #91AA99;
+  font-weight: normal;
+}
+
+.relBodyAjusSimula{
+  vertical-align:top;
+  text-align:center;
+  font-size: 11px;
+  background-color:#EDE9D6;
+  border: 1px solid #C6E1D7;
+  width:400px;
+ }
+
+.relBodyAjusFilas{
+  vertical-align:top;
+  text-align:center;
+  font-size: 11px;
+  background-color:#dddddd;
+  border: 1px solid #dddddd;
+  width:400px;
+ }
+
+.relHeadAjus{
+  padding-left:5px;
+  padding-right:5px;
+  text-align:center;
+  vertical-align:top;
+  font-size: 11px;
+  font-weight: normal;
+  width: 500px;
+}
+
+.relHeadInvisible{
+  padding-left:0px;
+  padding-right:0px;
+  text-align:center;
+  vertical-align:top;
+  font-size: 11px;
+  color: #ffffff;
+  background-color:#ffffff;
+  height: 1px;
+}
+
+
+
+.relBodySeleccionado{
+  vertical-align:top;
+  text-align:center;
+  font-size: 11px;
+  background-color:#fff7de;
+  border: 1px solid #FFFFD4;
+}
+
+td.relBodySeleccionado>table{
+  border-spacing: 2px;
+  font-size: 11px;
+  background-color:#FFEBAD;
+  border: none;
+}
+
+.relBodySeleccionado table td{
+  text-align:center;
+  font-size: 11px;
+  background-color:#FFEBAD;
+  border: 1px solid #FFEBAD;
+}
+
+.relBodySeleccionado table th{
+  padding-left:5px;
+  padding-right:5px;
+  text-align:center;
+  font-size: 11px;
+  background-color:#FFEBAD;
+  border: 1px solid #FFEBAD;
+  font-weight: normal;
+}
+
+
+/*-------- derecha ---------------------- */
+
+.relBodyRight{
+  vertical-align:top;
+  text-align:right;
+  font-size: 11px;
+  background-color:#f3f3f3;
+  border: 1px solid #ffffff;
+}
+
+td.relBodyRight>table{
+  border-spacing: 4px;
+  font-size: 11px;
+  background-color:#f3f3f3;
+  border: none;
+}
+
+.relBodyRight table td{
+  text-align:right;
+  font-size: 11px;
+  background-color:#f4f4f4;
+  border: 1px solid #ffffff;
+}
+
+.relBodyRight table th{
+  padding-left:10px;
+  padding-right:10px;
+  text-align:right;
+  font-size: 11px;
+  background-color:#f3f3f3;
+  border: 1px solid #ffffff;
+  font-weight: normal;
+}
+
+.relBodyRightTotal{
+  vertical-align:top;
+  text-align:right;
+  font-size: 11px;
+  background-color:#EDE9D6;
+  border: 1px solid #ffffff;
+}
+
+/*-------- left ---------------------- */
+
+.relBodyLeft{
+  padding-left:10px;
+  vertical-align:top;
+  text-align:left;
+  font-size: 11px;
+  background-color:#f3f3f3;
+  border: 1px solid #ffffff;
+  font-weight: normal;
+}
+
+td.relBodyLeft>table{
+  border-spacing: 4px;
+  font-size: 11px;
+  background-color:#f3f3f3;
+  border: none;
+}
+
+.relBodyLeft table td{
+  text-align:left;
+  font-size: 11px;
+  background-color:#f4f4f4;
+  border: 1px solid #ffffff;
+}
+
+.relBodyLeft table th{
+  padding-left:10px;
+  padding-right:10px;
+  text-align:left;
+  font-size: 11px;
+  background-color:#f3f3f3;
+  border: 1px solid #ffffff;
+  font-weight: normal;
+}
+
+.relBodyLeftTotal{
+  vertical-align:top;
+  text-align:left;
+  font-size: 11px;
+  background-color:#EDE9D6;
+  border: 1px solid #ffffff;
+}
+
+
+.espaciador{
+	vertical-align:top;
+	padding-top: 15px;
+}
+
+.espaciador table td{
+  vertical-align:top;
+}
+
+.espaciador table th{
+ vertical-align:top;
+}
+
+
+.columDashboard{
+	vertical-align:top;
+	padding-top: 0px;
+	display:block;
+	width: 240px;
+	
+}
+
+.columSeparador{
+	vertical-align:top;
+	padding-top: 0px;
+	width: 5px;
+
+}
+
+.imageRow{
+	background: transparent url('../imagenes/es/botones/comunicados.jpg') no-repeat ;
+	height: 80px; 
+	margin: 0 auto; 
+	width: 80px;
+}
+
+.imageRow:hover{
+	background: transparent url('../imagenes/es/botones/comunicadosSoft.jpg') no-repeat ;
+	height: 80px; 
+	margin: 0 auto; 
+	width: 80px;
+}
+
+.textoImagen{
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-topright: 0px; 
+	color: #ffffff; 
+	font-family: "Segoe UI";
+	font-size: 14px;
+	margin: 0; 
+	padding-left: 55px;
+	/* Theoretically for IE 8 & 9 (more valid) */	
+	/* ...but not required as filter works too */
+	/* should come BEFORE filter */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=50);
+	/* Older than Firefox 0.9 */
+	-moz-opacity:0.5;
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 0.5;
+    /* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: 1.0;
+	
+}
+
+.espacios{
+  margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border: 0;
+}
+
+
+.sin_espacios{
+	padding: 0;
+	border-spacing: 0;
+}
+
+.sin_espacios td{
+	padding: 0;
+	border-spacing: 0;
+}
+
+
+.sin_espacios tr{
+	padding: 0;
+	border-spacing: 0;
+}

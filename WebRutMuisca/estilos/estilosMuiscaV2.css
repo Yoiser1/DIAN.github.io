@@ -1,0 +1,288 @@
+/* GENERAL :: PARA ESQUEMA GENERICO */
+body {
+    background-color: #ffffff;
+    padding:0;
+    margin:0;
+    height: 0;
+ }
+ 
+ /* ESTILOS PARA MARCO CONTENEDOR */
+ .borde_derecho {
+       border-left: 1px solid #CCCCCC;
+                
+ }
+ .borde_izquierdo {
+     border-right: 1px solid #CCCCCC;
+ }
+ 
+ .borde_inferior {
+     background-image: url("../imagenes/es/fondos/v2/borde_inferior.gif");
+     background-repeat:   repeat-x;
+     background-position: top;
+ }
+ .borde_superior {
+     background-image: url("../imagenes/es/fondos/v2/borde_superior.gif");
+     background-repeat:   repeat-x;
+     background-position: bottom;
+ }
+ .esq_inf_izq {
+     background-image: url("../imagenes/es/fondos/v2/bordes_inf_izq.gif");
+     background-position: right top;
+     background-repeat: no-repeat;
+ }
+ .esq_inf_der {
+     background-image: url("../imagenes/es/fondos/v2/bordes_inf_der.gif");
+     background-repeat: no-repeat;
+     background-position: left top;
+ }
+ .esq_sup_izq {
+         height:10px;
+     background-image: url("../imagenes/es/fondos/v2/bordes_sup_izq.gif");
+     background-position: right bottom;
+     background-repeat: no-repeat;
+ }
+ .esq_sup_der {
+     background-image: url("../imagenes/es/fondos/v2/bordes_sup_der.gif");
+     background-repeat: no-repeat;
+     background-position: left bottom;
+ }
+ 
+ 
+ /* ------------ ESTILOS PARA PANTALLA LOGIN ------------ */
+ 
+ div.log_contenedor {
+     border:none;
+     border-bottom:3px #D0E7DD double;
+     width:450px;
+     background-image: url("../imagenes/es/fondos/v2/marca_agua_muisca.jpg");
+     background-repeat: no-repeat;
+     background-position: 0px 28px;
+ }
+ 
+ div.log_contenedor table {
+     border-spacing: 0px 0px;
+     border-collapse:collapse;
+ }
+ 
+ div.log_contenedor object {
+     margin: 0px;
+ }
+ 
+ 
+ div.log_contenedor table.titulo{
+     width:100%;
+     height:31px;
+     background-image: url("../imagenes/es/fondos/v2/barra_verde.jpg");
+     background-repeat: no-repeat;
+     background-position: left top;
+     text-indent:20px;
+     font-family: "Arial";
+     font-size: 10pt;
+     font-weight:bolder;
+     color:#2D5544;
+ }
+ div.log_contenedor table.cuerpo{
+ /*    border:solid 1px #000000;*/
+     margin-top:68px;
+     width:100%;
+     font-family: "Arial";
+     font-size: 10pt;
+     color:#2D5544;
+ }
+ div.log_contenedor table.cuerpo td{
+ /*    border:solid 1px #000000;*/
+     padding:0px;
+     padding-left:20px;
+     height:29px;
+     vertical-align:top;
+ }
+ div.log_contenedor table.cuerpo table.formulario{
+ /*    border:solid 1px #000000;*/
+     font-family: "Arial";
+     font-size: 10pt;
+     color:#000000;
+ }
+ div.log_contenedor table.cuerpo table.formulario td{
+     width:90px;
+     height:30px;
+     padding:0px;
+     padding-right:10px;
+     vertical-align:top;
+ }
+ div.log_contenedor table.cuerpo table.formulario select {
+     background-color:#F3F3F3;
+     border:1px solid #CCCCCC;
+ }
+ div.log_contenedor table.cuerpo table.formulario input {
+     background-color:#F3F3F3;
+     border:1px solid #CCCCCC;
+ }
+ 
+ /* ------------ ESTILOS PIE DE PAGINA ------------ */
+ 
+ td.opcion{
+     width:80px;
+     text-align:center;
+ }
+ 
+ table.creditos_pie td {
+     padding-left: 15px !important;
+     padding-right: 15px !important;
+ }
+ 
+ table.creditos_pie {
+     color: #FFFFFF;
+     font-family: Arial,Helvetica,sans-serif;
+     font-size: 11px;
+ }
+ 
+ .borde_inferior_nuevo {
+     background-image: url("../imagenes/es/fondos/v2/fondo_pie.png");
+     background-repeat:   repeat-x;
+     background-position: bottom;
+  }
+ .subTituloAzul{
+     font-family: "Segoe UI";
+     font-size  : 13pt;
+     color: #0035D8;
+ }
+ .subTituloAzulShadow{
+     font-family: "Segoe UI";
+     font-size  : 13pt;
+     color: #2294CC;
+     text-shadow: 0px 1px;
+ }
+ 
+ .subTituloGrisShadow{
+     font-family: "Segoe UI";
+     font-size  : 13pt;
+     color: #111111;
+     text-shadow: 0px 1px;
+ }
+ .txtNormalGris{
+     font-family: "Segoe UI";
+     font-size  : 10pt;
+     color: #686868;	
+ }
+ 
+ .tituloGris1{
+     font-family: "Segoe UI";
+     font-size  : 18pt;
+     color: #444444;	
+ }
+ 
+ .tituloGris2{
+     font-family: "Segoe UI";
+     font-size  : 16pt;
+     color: #444444;	
+ }
+ 
+ .tituloGris3{
+     font-family: "Segoe UI";
+     font-size  : 23pt;
+     color: #686868;	
+ }
+ 
+ .tituloRojo3{
+     font-family: "Segoe UI";
+     font-size  : 23pt;
+     color: #FF0000;	
+ }
+ 
+ .txtGrisPequeno{
+     font-family: "Segoe UI";
+     font-size  : 12pt;
+     color: #686868;	
+ }
+ 
+ .txtAzulPequeno{
+     font-family: "Segoe UI";
+     font-size  : 12pt;
+     color: #007FFF;	
+ }
+ 
+ .txtGrisMediano{
+     font-family: "Segoe UI";
+     font-size  : 14pt;
+     color: #686868;	
+ }
+ 
+ .txtNegroPequeno {	
+     font-family: "Segoe UI";
+     font-size: 12pt;
+     color: black;		
+ }
+ 
+ .txtRojoPequeno {	
+     font-family: "Segoe UI";
+     font-size: 12pt;		
+     color: #FF0000;		
+ }
+ 
+ .txtNegroPequenoNegrita {	
+     font-family: "Segoe UI";
+     font-size: 12pt;
+     color: black;		
+     font-weight: bold;
+     
+ }
+ 
+ .txtNegroMediano {	
+     font-family: "Segoe UI";
+     font-size: 14pt;
+     color: black;		
+ }
+ 
+ .txtGrisDiminuto{
+     font-family: "Segoe UI";
+     font-size  : 10pt;
+     color: #686868;	
+ }
+ 
+ .txtGrisDiminuto2{
+     font-family: "Segoe UI";
+     font-size  : 8pt;
+     color: #686868;	
+ }
+ 
+ .imageRow1{
+     background: transparent url('../imagenes/es/botones/problema.png') no-repeat;	
+     background-repeat:no-repeat;	
+     background-position:center;  
+     height: 250px; 
+     margin: 0 auto;		    
+     /* Required for IE 5, 6, 7 */
+     /* ...or something to trigger hasLayout, like zoom: 1; */
+     width: 100%;		
+     /* Theoretically for IE 8 & 9 (more valid) */	
+     /* ...but not required as filter works too */
+     /* should come BEFORE filter */
+     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";	
+     /* This works in IE 8 & 9 too */
+     /* ... but also 5, 6, 7 */
+     filter: alpha(opacity=60);	
+     /* Older than Firefox 0.9 */
+     -moz-opacity:0.6;	
+     /* Safari 1.x (pre WebKit!) */
+     -khtml-opacity: 0.6;    
+     /* Modern!
+     /* Firefox 0.9+, Safari 2?, Chrome any?
+     /* Opera 9+, IE 9+ */
+     opacity: 0.6;        
+ }
+ 
+ .textoImagen1{
+     -moz-border-radius-bottomright: 0px;
+     -moz-border-radius-topright: 0px;	
+     font-family: "Segoe UI";
+     font-size  : 12pt;
+     color: #686868;		
+     margin: 0; 
+     padding-left: 0px;		
+ }
+ 
+ 
+ 
+ 
+ 
+ 

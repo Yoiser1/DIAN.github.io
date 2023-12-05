@@ -1,0 +1,466 @@
+
+
+
+
+
+
+
+
+    
+    
+
+	<!DOCTYPE HTML>
+	<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+<title>DIAN - MUISCA</title>
+
+
+<link href="/WebRutMuisca/estilos/estilosMuisca.css"
+	rel="stylesheet" type="text/css">
+<link href="/WebRutMuisca/estilos/estilosMuiscaV2.css"
+	rel="stylesheet" type="text/css">
+<link href="/WebRutMuisca/estilos/normalize.css"
+	rel="stylesheet" type="text/css">
+<link href="/WebRutMuisca/estilos/tree.css"
+	rel="stylesheet" type="text/css">
+<link href="/WebRutMuisca/estilos/tabla.css"
+	rel="stylesheet" type="text/css">
+<link href="/WebRutMuisca/estilos/adminFunciones.css"
+	rel="stylesheet" type="text/css">
+<link href="/WebRutMuisca/scripts/colorbox/colorbox.css"
+	rel="stylesheet" type="text/css" media="screen" />
+<link
+	href="/WebRutMuisca/scripts/jquery/css/ui-lightness/jquery-ui-1.7.2.custom.css"
+	rel="stylesheet" type="text/css" media="screen" />
+<link
+	href="/WebRutMuisca/estilos/jquery.autocomplete.css"
+	rel="stylesheet" type="text/css" />
+<link href="/WebRutMuisca/estilos/estilosRich.css"
+	rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript"
+	src="/WebRutMuisca/funciones/AdmTabla.js"></script>
+<script type="text/javascript"
+	src="/WebRutMuisca/funciones/AdmLista.js"></script>
+<script type="text/javascript"
+	src="/WebRutMuisca/funciones/Hashtable.js"></script>
+<script type="text/javascript"
+	src="/WebRutMuisca/funciones/AdmFabricaMensajes.js"></script>
+<script type="text/javascript"
+	src="/WebRutMuisca/funciones/AdmMensajes.js"></script>
+<script type="text/javascript"
+	src="/WebRutMuisca/funciones/AdmValidaciones.js"></script>
+<script type="text/javascript"
+	src="/WebRutMuisca/funciones/AdmReloj.js"></script>
+<script type="text/javascript"
+	src="/WebRutMuisca/scripts/jquery/jquery-1.4.2.js"></script>
+<script type="text/javascript"
+	src="/WebRutMuisca/scripts/jquery/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript"
+	src="/WebRutMuisca/scripts/jquery/jquery.qtip-1.0.0-rc3.js"></script>
+<script type="text/javascript"
+	src="/WebRutMuisca/scripts/overlib.js"> </script>
+
+<script type="text/javascript">
+        
+	        jQuery.noConflict();
+	
+	        function showStatus(show) {
+	          modal = document.getElementById('statusPanel').component;
+	          if (show) {
+	            modal.show();
+	          } else {
+	            modal.hide();
+	          }
+	        }
+	
+	        function mostrarMensajes() {
+	
+	          miGestorMensajes = new DGestorMensajes();
+	          manejarMensajes();
+	          //-- reviso si hay mensaje de error
+	          var unaTabla=document.getElementById("tblMensajes");
+	          var unaFila , unaCelda , i;
+	          for(i = 0; i < unaTabla.rows.length ; i++){
+	            unaFila = unaTabla.rows[i];
+	            unaCelda = unaFila.cells[1];
+	            if(unaCelda.innerHTML==COD_TIPO_ERROR){
+	              return false;
+	            }
+	          }
+	          return true;
+	        }
+
+        </script>
+
+</head>
+
+<body bgcolor="#ffffff">
+	<table width="100%" border="0" align="center">
+		<tr>
+			<td width="100%" valign="top"><img src="imagenes/es/logos/DIAN.png" alt="" />
+				<hr color="blue" size=3></td>
+		</tr>
+		<tr>
+			<td valign="top">
+					
+						
+							
+								
+							
+						
+						
+					
+					
+				<table width="100%">
+<tbody>
+<tr>
+<td><div id="statusPanel" style="display: none;"><input id="statusPanelOpenedState" name="statusPanelOpenedState" type="hidden" /><div class="rich-modalpanel " id="statusPanelContainer" style="position: absolute; display: none; z-index: 100; background-color: inherit;"><div class="dr-mpnl-mask-div rich-mpnl-mask-div" id="statusPanelDiv" style="z-index: 1;"></div><div class="dr-mpnl-mask-div rich-mpnl-mask-div" id="statusPanelCursorDiv" style="filter: alpha(opacity=1); z-index: -200"></div><div class="dr-mpnl-panel rich-mpnl_panel" id="statusPanelCDiv" style="width: 1px; height: 1px; z-index: 2;"><div class="dr-mpnl-resizer rich-mpnl-resizer" id="statusPanelResizerNWU" style="width: 40px; height: 4px;z-index: 13;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="statusPanelResizerN" style="width: 40px; height: 4px;z-index: 03;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="statusPanelResizerNEU" style="width: 40px; height: 4px;z-index: 13;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="statusPanelResizerNEL" style="height: 40px; width: 4px;z-index: 13;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="statusPanelResizerE" style="height: 40px; width: 4px;z-index: 03;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="statusPanelResizerSEU" style="height: 40px; width: 4px;z-index: 13;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="statusPanelResizerSEL" style="width: 40px; height: 4px;z-index: 13;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="statusPanelResizerS" style="width: 40px; height: 4px;z-index: 03;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="statusPanelResizerSWL" style="width: 40px; height: 4px;z-index: 13;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="statusPanelResizerSWU" style="height: 40px; width: 4px;z-index: 13;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="statusPanelResizerW" style="height: 40px; width: 4px;z-index: 03;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="statusPanelResizerNWL" style="height: 40px; width: 4px;z-index: 13;"></div><div class="dr-mpnl-shadow rich-mpnl-shadow" id="statusPanelShadowDiv" style="top: 4px; left: 4px; opacity:0.1; filter:alpha(opacity=10);"></div><table border="0" cellpadding="0" cellspacing="0" id="statusPanelContentTable" style="position: absolute; z-index: 2; width: -1px; height: -1px; text-align: center;;"><tbody><tr><td class="dr-mpnl-pnl"><div class="rich-mp-content" id="statusPanelContentDiv" style="overflow: hidden;"><a class="dr-mpnl-pnl-a" href="#" id="statusPanelFirstHref">_</a><table border="0" cellpadding="0" cellspacing="0" style="height: 100%; width: 100%;"><tr style="height: 1%;"><td class="dr-mpnl-header rich-mpnl-header-cell"><div class="dr-mpnl-pnl-text dr-mpnl-pnl-h rich-mpnl-text rich-mpnl-header " id="statusPanelHeader" style="white-space: nowrap;">Procesando...</div></td></tr><tr style="height: 99%"><td class="dr-mpnl-pnl-b rich-mpnl-body" valign="top"><img src="" alt="" /><a class="dr-mpnl-pnl-a" href="#" id="statusPanelLastHref">_</a></td></tr></table></div></td></tr></tbody></table></div><script type="text/javascript">new ModalPanel('statusPanel',
+				{
+					width: 250,
+					height: 120,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: true,
+					moveable: true,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 100,
+							
+					onhide: '',
+													
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: false
+				});</script></div></div><script type="text/javascript"></script></td>
+</tr>
+<tr>
+<td><span id="_viewRoot:status"><span id="_viewRoot:status.start" style="display: none"></span><script type="text/javascript">
+window.document.getElementById('_viewRoot:status.start').onstart=function(){showStatus(true);};
+</script><span id="_viewRoot:status.stop"></span><script type="text/javascript">
+window.document.getElementById('_viewRoot:status.stop').onstop=function(){showStatus(false);};
+</script></span></td>
+</tr>
+</tbody>
+</table>
+  <table id="tblMensajes" style="display:none"></table><input id="modoPresentacionSeleccionBO" type="hidden" name="modoPresentacionSeleccionBO" value="pantalla" /><input id="siguienteURL" type="hidden" name="siguienteURL" /><input id="modoPresentacionFormBO" type="hidden" name="modoPresentacionFormBO" value="pantalla" /><input id="modoOperacionFormBO" type="hidden" name="modoOperacionFormBO" /><input id="mantenerCriterios" type="hidden" name="mantenerCriterios" /><table>
+<tbody>
+<tr>
+<td><link href="/WebRutMuisca/estilos/tabla.css" rel="stylesheet" type="text/css">
+			<link href="/WebRutMuisca/estilos/estilosMuisca.css" rel="stylesheet" type="text/css">
+			<link href="/WebRutMuisca/estilos/tree.css" rel="stylesheet" type="text/css">
+			<link href="/WebRutMuisca/estilos/adminFunciones.css" rel="stylesheet" type="text/css">
+			<link href="/WebRutMuisca/estilos/estilosMuiscaV2.css" rel="stylesheet" type="text/css">
+			<link href="/WebRutMuisca/scripts/colorbox/colorbox.css" rel="stylesheet" type="text/css"
+				media="screen" />
+			<link href="/WebRutMuisca/scripts/jquery/css/ui-lightness/jquery-ui-1.7.2.custom.css"
+				rel="stylesheet" type="text/css" media="screen" />
+			<link href="/WebRutMuisca/estilos/jquery.autocomplete.css" rel="stylesheet"
+				type="text/css" />
+			<link href="/WebRutMuisca/estilos/estilosRich.css" rel="stylesheet" type="text/css" />
+			<link rel="stylesheet" type="text/css"
+				href="/WebRutMuisca/scripts/jquery/jqplot/jquery.jqplot.css" />
+
+			<script type="text/javascript"
+				src="/WebRutMuisca/scripts/jquery/jqplot/jquery.jqplot.min.js"></script>
+			<script type="text/javascript"
+				src="/WebRutMuisca/scripts/jquery/jqplot/plugins/jqplot.pieRenderer.min.js"></script>
+
+			<script type="text/javascript">
+
+				function getObligacion() {
+					var alto = getWindowSize();
+					var tamanio = "height:" + (alto) + "px;" + "width: 100%;";
+					var cadena = document.getElementById("vistaconsultaEstadoRUTOBL:formconsultaEstadoRUTOBL:hddResumenResp").value;
+					if (cadena != null && cadena != "") {
+						var data = cadena.split(",");
+						for (i = 0; i < data.length; i++) {
+							data[i] = data[i].split("=");
+							data[i][1] = 1 * data[i][1];
+						}
+						var plot1 = jQuery
+							.jqplot(
+								'chart1',
+								[data],
+								{
+									seriesDefaults: {
+
+										// Make this a pie chart.
+										renderer: jQuery.jqplot.PieRenderer,
+										rendererOptions: {
+											// Put data labels on the pie slices.
+											// By default, labels show the percentage of the slice.
+											padding: 0,
+											sliceMargin: 3,
+											//innerDiameter: 200,
+											// startAngle: -90,
+											showDataLabels: true
+										}
+									},
+
+									grid: {
+										drawGridLines: true, // wether to draw lines across the grid or not.
+										gridLineColor: '#ffffff', // *Color of the grid lines.
+										background: '#ffffff', // CSS color spec for background color of grid.
+										borderColor: '#ffffff', // CSS color spec for border around grid.
+										borderWidth: 0, // pixel width of border around grid.
+										shadow: false // draw a shadow for grid.
+									},
+									legend: {
+										show: true,
+										// placement: 'outside',
+										//    xoffset: 1,
+										// 				    	    fontSize: '11px',
+										// 				    	    rowSpacing: '10px',
+										// 				    	    textColor: '#222222',
+										fontFamily: 'Segoe UI',
+										marginTop: 0, //CSS margin for the legend DOM element.
+										marginRight: 0, //CSS margin for the legend DOM element.
+										marginBottom: 0, //CSS margin for the legend DOM element.
+										marginLeft: 20,
+										rowSpacing: 2,
+										location: 'e'
+									}
+								});
+					}
+				}
+
+
+
+				function getWindowSize() {
+					if (window.outerHeight) {
+						var totalW = window.innerWidth;
+						var totalH = window.innerHeight * 85 / 100;
+					} else {
+						if (document.documentElement.clientWidth) {
+							var clientW = document.documentElement.clientWidth;
+							var clientH = document.documentElement.clientHeight;
+							// resize the window, the new window will be smaller
+							window.resizeTo(clientW,
+								clientH);
+							// calculate the difference between the client and the total size in the new window
+							var frameW = clientW
+								- document.documentElement.clientWidth;
+							var frameH = clientH
+								- document.documentElement.clientHeight;
+							var totalW = clientW + frameW;
+							var totalHi = clientH + frameH;
+							/* if no scrollbar appeared when the original window was made smaller,
+							   then the totalW and totalH contains the size of the original window,
+							   else totalW or totalH contains a larger value. */
+							window.resizeTo(totalW, totalHi);
+							if (clientW != document.documentElement.clientWidth
+								|| clientH != document.documentElement.clientHeight) {
+								// repair the mistake
+								frameW = totalW
+									- document.documentElement.clientWidth;
+								frameH = totalHi
+									- document.documentElement.clientHeight;
+								totalW = clientW + frameW;
+								totalHi = clientH + frameH;
+							}
+							totalH = totalHi * 76 / 100;
+						}
+					}
+					return totalH;
+				}
+
+			</script></td>
+</tr>
+</tbody>
+</table>
+<form id="vistaconsultaEstadoRUTOBL:formconsultaEstadoRUTOBL" method="post" action="/WebRutMuisca/DefConsultaEstadoRUTOBL.faces" enctype="application/x-www-form-urlencoded">
+<input id="vistaconsultaEstadoRUTOBL:formconsultaEstadoRUTOBL:hddResumenResp" type="hidden" name="vistaconsultaEstadoRUTOBL:formconsultaEstadoRUTOBL:hddResumenResp" value="" /><table id="tblMensajes" style="display:none"></table><table>
+<tbody>
+<tr>
+<td class="fondoTituloLeftAjustado">NIT</td>
+<td class="tipoFilaNormalVerde">1077423689</td>
+<td class="fondoTituloLeftAjustado">DV</td>
+<td class="tipoFilaNormalVerde">0</td>
+</tr>
+</tbody>
+</table>
+<table width="100%">
+<tbody>
+<tr>
+<td class="fondoTituloLeftAjustado">Raz&oacute;n Social</td>
+<td class="tipoFilaNormalVerde"><span id="vistaconsultaEstadoRUTOBL:formconsultaEstadoRUTOBL:razonSocial">YOISER STIVEN AGUALIMPIA DÁVILA</span></td>
+</tr>
+</tbody>
+</table>
+<table width="100%">
+<tbody>
+<tr>
+<td class="fondoTituloLeftAjustado">Fecha Actual</td>
+<td class="tipoFilaNormalVerde">05-12-2023</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td class="fondoTituloLeftAjustado">Registro Activo: Corresponde a los NIT que se encuentran vigentes en la base de datos de la DIAN.</td>
+</tr>
+</tbody>
+</table>
+ <input type="hidden" name="com.sun.faces.VIEW" value="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" />
+ <input type="hidden" name="vistaconsultaEstadoRUTOBL:formconsultaEstadoRUTOBL" id="vistaconsultaEstadoRUTOBL:formconsultaEstadoRUTOBL" value="vistaconsultaEstadoRUTOBL:formconsultaEstadoRUTOBL" /></form>
+
+
+
+
+		
+		
+		
+		
+		
+
+
+
+	
+		
+	
+	
+
+	
+
+		
+
+		
+
+
+
+				
+					
+					
+					
+					
+				
+
+				
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+					
+
+				
+
+
+
+				
+
+					
+					
+						
+					
+
+				
+
+
+				
+
+					
+
+					
+
+					
+
+					
+
+				
+                  
+			
+					
+			
+
+				
+
+					
+						
+						
+							
+							
+							
+								
+									
+										
+									
+									
+										
+									
+								
+								
+									
+										
+									
+									
+								
+								
+									
+										
+									
+									
+										
+									
+								
+
+							
+
+						
+					
+					
+				
+
+				
+				
+					
+				
+			
+               
+
+			
+            	
+			
+           
+
+
+
+	
+
+</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">manejarMensajes();</script>
+</body>
+	</html>
+
+
+
